@@ -15,7 +15,17 @@
         .addEventListener('click', getText);
 
         function getText() {
-            console.log(123);
+            // fetch('sample.txt')
+            // .then(function(res) {
+            //     return res.text();
+            // })
+            // .then(function(data) {
+            //     console.log(data);
+            // })
+
+            fetch('sample.txt')
+            .then((res) => res.text())
+            .then((data) => console.log(data))
         }
     </script>
 </body>
